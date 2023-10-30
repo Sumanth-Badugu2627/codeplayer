@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePlayer</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="header">
+        <div id="logo">CodePlayer</div>
+        <div id="buttonContainer">
+            <div class="button active" id="html">HTML</div>
+            <div class="button" id="css">CSS</div>
+            <div class="button" id="javascript">JavaScript</div>
+            <div class="button active" id="output">Output</div>
+        </div>
+    </div>
+    <div id="bodycontainer">
+        <textarea id="htmlpanel" class="panel">
+            <p id='a'>Hello</p>
+        </textarea>
+        <textarea id="csspanel" class="panel hidden"></textarea>
+        <textarea id="javascriptpanel" class="panel hidden">
+            document.getElementById('a').style.color = 'green';
+        </textarea>
+        <iframe id="outputpanel" class="panel"></iframe>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
