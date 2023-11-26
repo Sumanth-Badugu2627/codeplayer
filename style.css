@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+/* Header Styling */
+#header {
+    background-color: #343a40; /* Dark gray header background */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Editor Styling */
+textarea {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    resize: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:hover {
+    border-color: #007bff; /* Highlight border color on hover */
+}
+
+textarea:focus {
+    border-color: #007bff; /* Highlight border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Highlight box shadow on focus */
+}
+
+.editor-container {
+    background-color: #f8f9fa; /* Light gray editor background */
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.editor-container:hover {
+    background-color: #ffffff; /* White editor background on hover */
+    border-color: #007bff; /* Highlight border color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+/* Output Styling */
+#output {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#output:hover {
+    background-color: #f8f9fa; /* Light gray output background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
